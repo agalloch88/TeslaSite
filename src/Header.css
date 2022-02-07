@@ -1,0 +1,19 @@
+.header {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    left: 0;
+    padding: 25px;
+    padding-top: 15px;
+    position: sticky;
+    right: 0;
+    top: 0;
+    z-index: 2;
+}
+
+.header__logoImg {
+    flex: 1;
+    object-fit: contain;
+    width: 90px;
+    margin-right: 100px;
+}
