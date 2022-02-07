@@ -13,7 +13,36 @@
 
 .header__logoImg {
     flex: 1;
+    margin-right: 100px;
     object-fit: contain;
     width: 90px;
-    margin-right: 100px;
+}
+
+.header__links {
+    display: flex;
+    gap: 15px;
+}
+
+.header__links > a {
+    color: black;
+    font-size: 15px;
+    font-weight: 500;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.header__right {
+    align-items: center;
+    display: flex;
+    gap: 15px;
+}
+
+.header__right > a {
+    color: black;
+    font-size: 15px;
+    font-weight: 500;
+    position: relative;
+    text-decoration: none;
+    text-transform: uppercase;
+    z-index: 0;
 }

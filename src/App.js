@@ -4,12 +4,12 @@ import Header from "./Header";
 import { BrowserRouter as Router, Switch, Route, Redirect } from "react-router-dom";
 
 function App() {
-  const [isMenuOpen, setisMenuOpen] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
     <Router>
       <div className="app">
-        <Header />
+        <Header isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen}/>
         {/* header */}
         {/* header block */}
       </div>

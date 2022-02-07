@@ -1,8 +1,9 @@
 import React from "react";
 import "./Header.css";
 import { Link } from "react-router-dom";
+import CloseIcon from '@material-ui/icons/Close';
 
-function Header() {
+function Header({ isMenuOpen, setIsMenuOpen }) {
   return (
     <div className="header">
       <div className="header__logo">
@@ -23,11 +24,11 @@ function Header() {
         <Link to="/">Solar Panels</Link>
       </div>
       <div className="header__right">
-          <Link to="/">Shop</Link>
-          <Link to="/">Account</Link>
-          <div className="header__menu">
-              Menu
-          </div>
+        <Link to="/">Shop</Link>
+        <Link to="/">Account</Link>
+        <div className="header__menu" onClick={() => setIsMenuOpen(!isMenuOpen)}>
+            {isMenuOpen ? <CloseIcon /> : "Menu"}
+        </div>
       </div>
     </div>
   );
