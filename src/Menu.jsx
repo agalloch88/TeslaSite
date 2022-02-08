@@ -8,13 +8,14 @@ function Menu() {
       <MenuItem title='existing inventory' />
       <MenuItem title='used inventory' />
       <MenuItem title='trade-in' />
+      <MenuItem title='test drive' />
       <MenuItem title='cybertruck' />
       <MenuItem title='roadster' />
       <MenuItem title='semi' />
       <MenuItem title='charging' />
       <MenuItem title='powerwall' />
       <MenuItem title='commercial solar' />
-      <MenuItem title='test drive' />
+      <MenuItem title='utilities' />
       <MenuItem title='find us' />
       <MenuItem title='support' />
       <MenuItem title='united states' />
