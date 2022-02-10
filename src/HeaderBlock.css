@@ -30,3 +30,40 @@
     font-size: 38px;
     font-weight: 500;
 }
+
+.headerBlock__infoText > h4 {
+    color: #5c5e62;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.headerBlock__infoText > h4 > span {
+    border-bottom: 1px solid black;
+    color: 393c41;
+    cursor: pointer;
+    padding-bottom: 4px;
+    padding-top: 15px;
+}
+
+.headerBlock__infoText > h4 > span:hover {
+    border-bottom-width: 2px;
+    color: black;
+}
+
+.headerBlock__actions {
+    display: flex;
+    gap: 20px;
+    margin-top: 330px;
+}
+
+.headerBlock__actions > button {
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-weight: 600;
+    outline: none;
+    padding-bottom: 12px;
+    padding-top: 12px;
+    text-transform: uppercase;
+    width: 260px;
+}
