@@ -9,6 +9,7 @@ import {
 } from "react-router-dom";
 import Menu from "./Menu";
 import HeaderBlock from "./HeaderBlock";
+import Login from "./Login";
 
 function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -17,12 +18,12 @@ function App() {
     <Router>
       <div className="app">
         <Switch>
-          <Route path="/">
+          <Route exact path="/">
             <Header isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />
             {isMenuOpen && <Menu />}
             <HeaderBlock />
           </Route>
-          <Route path='/login'>
+          <Route exact path='/login'>
             <Login />
           </Route>
         </Switch>
