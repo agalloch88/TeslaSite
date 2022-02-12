@@ -23,12 +23,19 @@
     gap: 15px;
 }
 
+.header__links > a:hover {
+    backdrop-filter: blur(16px);
+    background-color: hsla(0, 0%, 0%, 0.05);
+}
+
 .header__links > a {
-    color: black;
+    border-radius: 50px;
+    color: #171a20;
     font-size: 15px;
     font-weight: 500;
+    padding: 5px 10px;
     text-decoration: none;
-    text-transform: uppercase;
+    transition: all 0.2s;
 }
 
 .header__right {
@@ -38,23 +45,29 @@
 }
 
 .header__right > a {
-    color: black;
+    border-radius: 50px;
+    color: #171a20;
     font-size: 15px;
     font-weight: 500;
+    padding: 5px 10px;
     position: relative;
     text-decoration: none;
-    text-transform: uppercase;
+    /* transition: all 0.2s; */
     z-index: 0;
 }
 
+.header__right > a:hover {
+    backdrop-filter: blur(16px);
+    background-color: hsla(0, 0%, 0%, 0.05);
+}
+
 .header__menu {
-    color: black;
+    color: #171a20;
     font-size: 15px;
     font-weight: 500;
     cursor: pointer;
     position: relative;
     text-decoration: none;
-    text-transform: uppercase;
     z-index: 2;
 }
 
