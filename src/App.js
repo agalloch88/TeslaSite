@@ -22,6 +22,9 @@ function App() {
             {isMenuOpen && <Menu />}
             <HeaderBlock />
           </Route>
+          <Route path='/login'>
+            <Login />
+          </Route>
         </Switch>
       </div>
     </Router>
