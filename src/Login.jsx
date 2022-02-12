@@ -2,10 +2,15 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./Login.css";
 import LanguageOutlinedIcon from "@material-ui/icons/LanguageOutlined";
+import ButtonPrimary from './ButtonPrimary';
 
 function Login() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+
+  const signIn = (e) => {
+      e.preventDefault();
+  }
 
   return (
     <div className="login">

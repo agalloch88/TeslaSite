@@ -1,0 +1,40 @@
+.login {
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+    height: 100vh;
+    padding: 25px;
+    padding-top: 15px;
+}
+
+.login__header {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+}
+
+.login__logo > a > img {
+    object-fit: contain;
+    width: 90px;
+}
+
+.login__language {
+    align-items: center;
+    border-radius: 50px;
+    cursor: pointer;
+    display: flex;
+    font-size: 15px;
+    gap: 5px;
+    padding: 5px 10px;
+    transition: all 0.2s;
+}
+
+.login__language:hover {
+    background-color: hsla(0, 0%, 50.2%, 0.125);
+}
+
+.login__language > span {
+    font-weight: 500;
+}
