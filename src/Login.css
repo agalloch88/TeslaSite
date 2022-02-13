@@ -81,3 +81,7 @@
   border: 1px solid #d6d6d6;
   transition: all 0.2s;
 }
+
+.login__form > button {
+    
+}
