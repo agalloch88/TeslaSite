@@ -4,6 +4,7 @@ import "./Login.css";
 import LanguageOutlinedIcon from "@material-ui/icons/LanguageOutlined";
 import ButtonPrimary from './ButtonPrimary';
 import ButtonSecondary from "./ButtonSecondary";
+import { auth } from './firebase';
 
 function Login() {
   const [email, setEmail] = useState("");
@@ -11,6 +12,8 @@ function Login() {
 
   const signIn = (e) => {
       e.preventDefault();
+
+      auth.signInWith
   }
 
   return (
