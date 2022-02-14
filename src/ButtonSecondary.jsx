@@ -1,8 +1,8 @@
 import React from 'react';
 import './ButtonSecondary.css';
 
-function ButtonSecondary() {
-  return <button>Create Account</button>;
+function ButtonSecondary({name, type, onClick}) {
+  return <button className="buttonSecondary">{name}</button>;
 }
 
 export default ButtonSecondary;

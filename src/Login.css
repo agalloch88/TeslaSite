@@ -82,6 +82,19 @@
   transition: all 0.2s;
 }
 
-.login__form > button {
-    
+.login__divider {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.login__divider > hr {
+    height: 0;
+    opacity: 0.3;
+    width: 40%;
+}
+
+.login__divider > span {
+    color: #5c5e62;
+    font-weight: 500;
 }
