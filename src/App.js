@@ -12,6 +12,7 @@ import HeaderBlock from "./HeaderBlock";
 import Login from "./Login";
 import { useSelector } from "react-redux";
 import { selectUser } from "./features/userSlice";
+import Signup from "./Signup";
 
 function App() {
   const user = useSelector(selectUser);
