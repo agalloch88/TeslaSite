@@ -7,6 +7,17 @@
   padding-top: 15px;
 }
 
+/* Hide scrollbar for Chrome, Safari and Opera */
+.signup::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.signup {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
 .signup__header {
   align-items: center;
   display: flex;
@@ -55,7 +66,7 @@
 }
 
 .signup__info > a > button {
-    margin-bottom: 80px;
+  margin-bottom: 80px;
 }
 
 .signup__form {
