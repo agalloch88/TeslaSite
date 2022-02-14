@@ -30,6 +30,9 @@ function App() {
             {user ? <Redirect to="/tesla-account" /> : <Login />}
             <Login />
           </Route>
+          <Route exact path='/signup'>
+            <Signup />
+          </Route>
         </Switch>
       </div>
     </Router>
