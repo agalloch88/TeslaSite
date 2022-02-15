@@ -35,7 +35,7 @@ function TeslaAccount({isMenuOpen, setIsMenuOpen}) {
           <Link to="/tesla-account">Account</Link>
           <Link onClick={logoutOfApp}>Log Out</Link>
           <div className="teslaAccount__menu" onClick={() => setIsMenuOpen(!isMenuOpen)}>
-          {isMenuOpen ? <CloseIcon /> : "Menu"}
+          {isMenuOpen ? <CloseIcon className="teslaAccount__closeMenu"/> : "Menu"}
 
           </div>
         </div>
