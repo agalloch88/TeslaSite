@@ -47,7 +47,9 @@ const ItemText = styled.div`
 const DeliverySpan = styled.div``;
 
 const ButtonGroup = styled.div`
+  cursor: pointer;
   display: flex;
+  margin-bottom: 30px;
 `;
 
 const LeftButton = styled.div`
