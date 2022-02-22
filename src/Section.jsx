@@ -8,15 +8,16 @@ function Section({ backgroundImage, title, description, DeliveryText }) {
         <h1>{title}</h1>
         <p>
           {description}
-          <DeliverySpan>
             <span>{DeliveryText}</span>
-          </DeliverySpan>
         </p>
       </ItemText>
-      <ButtonGroup>
-        <LeftButton>Custom Order</LeftButton>
-        <RightButton>Existing Inventory</RightButton>
-      </ButtonGroup>
+      <Buttons>
+        <ButtonGroup>
+          <LeftButton>Custom Order</LeftButton>
+          <RightButton>Existing Inventory</RightButton>
+        </ButtonGroup>
+        <DownArrow src="/images/down-arrow.svg" />
+      </Buttons>
     </Wrap>
   );
 }
@@ -57,13 +58,27 @@ const LeftButton = styled.div`
   background-color: rgba(23, 26, 32, 0.8);
   border-radius: 100px;
   color: white;
+  cursor: pointer;
   display: flex;
   font-size: 12px;
   justify-content: center;
   height: 40px;
+  margin: 8px;
   opacity: 0.8;
   text-transform: uppercase;
   width: 256px;
 `;
 
 const RightButton = styled(LeftButton)``;
+
+const DownArrow = styled.img`
+  align-items: center;
+  animation: bounce infinite l.5s;
+  height: 40px;
+  overflow-x: hidden;
+`;
+
+const Buttons = styled.div`
+  display: flex;
+  flex-direction: column;
+`;

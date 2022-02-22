@@ -5,7 +5,7 @@ import Section from "./Section";
 function Home() {
   return (
     <Container>
-      <Section backgroundImage="model-3.jpg" title="Model 3" description="Order Online for" DeliveryText="Touchless Delivery" />
+      <Section backgroundImage="model-3.jpg" title="Model 3" description="Order Online for " DeliveryText="Touchless Delivery" />
     </Container>
   );
 }
