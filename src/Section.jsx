@@ -73,7 +73,7 @@ const RightButton = styled(LeftButton)``;
 
 const DownArrow = styled.img`
   align-items: center;
-  animation: bounce infinite l.5s;
+  animation: bounce infinite 1.5s;
   height: 40px;
   overflow-x: hidden;
 `;
