@@ -51,6 +51,9 @@ const ButtonGroup = styled.div`
   cursor: pointer;
   display: flex;
   margin-bottom: 30px;
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
 `;
 
 const LeftButton = styled.div`
@@ -69,7 +72,11 @@ const LeftButton = styled.div`
   width: 256px;
 `;
 
-const RightButton = styled(LeftButton)``;
+const RightButton = styled(LeftButton)`
+    background-color: white;
+    color: black;
+    opacity: 0.65;
+`;
 
 const DownArrow = styled.img`
   align-items: center;
