@@ -1,22 +1,22 @@
 import React from "react";
 import styled from "styled-components";
 
-function Section({ backgroundImage, title, description, DeliveryText }) {
+function Section({ backgroundImage, title, description, DeliveryText, leftButtonText, rightButtonText, showDownArrow }) {
   return (
     <Wrap bgImage={backgroundImage}>
       <ItemText>
         <h1>{title}</h1>
         <p>
           {description}
-            <span>{DeliveryText}</span>
+          <span>{DeliveryText}</span>
         </p>
       </ItemText>
       <Buttons>
         <ButtonGroup>
-          <LeftButton>Custom Order</LeftButton>
-          <RightButton>Existing Inventory</RightButton>
+          <LeftButton>{leftButtonText}</LeftButton>
+          <RightButton>{rightButtonText}</RightButton>
         </ButtonGroup>
-        <DownArrow src="/images/down-arrow.svg" />
+        {showDownArrow && <DownArrow src="/images/down-arrow.svg" />}
       </Buttons>
     </Wrap>
   );
@@ -41,6 +41,7 @@ const Wrap = styled.div`
 `;
 
 const ItemText = styled.div`
+  font-size: 20px;
   padding-top: 15vh;
   text-align: center;
 `;
@@ -73,9 +74,9 @@ const LeftButton = styled.div`
 `;
 
 const RightButton = styled(LeftButton)`
-    background-color: white;
-    color: black;
-    opacity: 0.65;
+  background-color: white;
+  color: black;
+  opacity: 0.65;
 `;
 
 const DownArrow = styled.img`
