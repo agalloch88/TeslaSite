@@ -1,10 +1,14 @@
 import React from "react";
 import styled from "styled-components";
+import Header from "./Header";
+import HeaderSC from "./HeaderSC";
 import Section from "./Section";
 
 function Home() {
   return (
     <Container>
+        <HeaderSC />
+        {/* <Header /> */}
       <Section
         backgroundImage="model-3.jpg"
         title="Model 3"

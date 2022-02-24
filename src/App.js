@@ -16,6 +16,7 @@ import Signup from "./Signup";
 import TeslaAccount from "./TeslaAccount";
 import { auth } from "./firebase";
 import Home from "./Home";
+import HeaderSC from "./HeaderSC";
 
 function App() {
   const user = useSelector(selectUser);
@@ -45,7 +46,8 @@ function App() {
       <div className="app">
         <Switch>
           <Route exact path="/">
-            <Header isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />
+            {/* <HeaderSC /> */}
+            {/* <Header isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} /> */}
             {isMenuOpen && <Menu />}
             {/* <HeaderBlock /> */}
             <Home />
