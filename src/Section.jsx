@@ -44,6 +44,19 @@ const ItemText = styled.div`
   font-size: 20px;
   padding-top: 15vh;
   text-align: center;
+
+  span {
+    border-bottom: 1px solid black;
+    color: #393c41;
+    cursor: pointer;
+    padding-bottom: 4px;
+    padding-top: 15px;
+  }
+
+  span:hover {
+    border-bottom-width: 2px;
+    color: black;
+  }
 `;
 
 // const DeliverySpan = styled.div``;
