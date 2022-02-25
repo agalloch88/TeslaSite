@@ -46,7 +46,7 @@ function App() {
       <div className="app">
         <Switch>
           <Route exact path="/">
-            {/* <HeaderSC /> */}
+            <HeaderSC />
             {/* <Header isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} /> */}
             {isMenuOpen && <Menu />}
             {/* <HeaderBlock /> */}

@@ -46,7 +46,7 @@ const ItemText = styled.div`
   text-align: center;
 `;
 
-const DeliverySpan = styled.div``;
+// const DeliverySpan = styled.div``;
 
 const ButtonGroup = styled.div`
   cursor: pointer;

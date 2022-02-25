@@ -1,16 +1,21 @@
 import React from "react";
+// import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 function HeaderSC() {
   return (
     <Container>
-        <a href="/">
-          <img
-            src="/images/Tesla-Logo.svg"
-            alt="Tesla styled logo"
-          />
-        </a>
-      <Menu></Menu>
+      <a href="/">
+        <img src="/images/Tesla-Logo.svg" alt="Tesla styled logo" />
+      </a>
+      <Menu>
+        <p><a href="#model-s">Model S</a></p>
+        <p><a href="#model-3">Model 3</a></p>
+        <p><a href="#model-x">Model X</a></p>
+        <p><a href="#model-y">Model Y</a></p>
+        <p><a href="#solar-roof">Solar Roof</a></p>
+        <p><a href="#solar-panel">Solar Panels</a></p>
+      </Menu>
     </Container>
   );
 }
@@ -32,6 +37,6 @@ const Container = styled.div`
   z-index: 1;
 `;
 
-
-
-const Menu = styled.div``;
+const Menu = styled.div`
+text-decoration: none;
+`;
