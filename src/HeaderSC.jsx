@@ -45,7 +45,6 @@ const Container = styled.div`
   position: fixed;
   right: 0;
   top: 0;
-  width: 90px;
   z-index: 1;
 
   img {
@@ -60,7 +59,6 @@ const Menu = styled.div`
   gap: 15px;
 
   p {
-    align-items: center;
     border-radius: 50px;
     color: #171a20;
     display: flex;
