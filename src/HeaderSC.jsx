@@ -47,10 +47,40 @@ const Container = styled.div`
   top: 0;
   width: 90px;
   z-index: 1;
+
+  img {
+      margin-right: 100px;
+  }
 `;
 
 const Menu = styled.div`
   align-items: center;
   display: flex;
   flex: 1;
+  gap: 15px;
+
+  p {
+    align-items: center;
+    border-radius: 50px;
+    color: #171a20;
+    display: flex;
+    font-size: 15px;
+    font-weight: 500;
+    justify-content: center;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.2s;
+    white-space: nowrap;
+    width: 100px;
+  }
+
+  p:hover {
+    backdrop-filter: blur(16px);
+    background-color: hsla(0, 0%, 0%, 0.05);
+  }
+
+  a {
+      width: 100px;
+  }
 `;
