@@ -1,14 +1,22 @@
 .menuItem {
-    cursor: pointer;
-    text-align: left;
+  cursor: pointer;
+  text-align: left;
 }
 
 .menuItem > h4 {
-    color: #393c41;
-    cursor: pointer;
-    font-weight: 500;
-    font-size: 15px;
-    letter-spacing: .5px;
-    padding-bottom: 15px;
-    padding-left: 10px;
+  color: #393c41;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 15px;
+  letter-spacing: 0.5px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-top: 10px;
+}
+
+.menuItem > h4:hover {
+  backdrop-filter: blur(16px);
+  background-color: hsla(0, 0%, 0%, 0.05);
+  border-radius: 10px;
+  transition: all 0.2s;
 }
