@@ -1,8 +1,9 @@
 import React from "react";
-// import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
+import CloseIcon from "@material-ui/icons/Close";
 import styled from "styled-components";
 
-function HeaderSC() {
+function HeaderSC({ isMenuOpen, setIsMenuOpen }) {
   return (
     <Container>
       <a href="/">
@@ -28,6 +29,20 @@ function HeaderSC() {
           <a href="#solar-panel">Solar Panels</a>
         </p>
       </Menu>
+      <RightMenu>
+        <Link to="/" className={isMenuOpen && "header__link--hidden"}>
+          Shop
+        </Link>
+        <Link to="/login" className={isMenuOpen && "header__link--hidden"}>
+          Account
+        </Link>
+        <div
+          className="header__menu"
+          onClick={() => setIsMenuOpen(!isMenuOpen)}
+        >
+          {isMenuOpen ? <CloseIcon /> : "Menu"}
+        </div>
+      </RightMenu>
     </Container>
   );
 }
@@ -48,7 +63,7 @@ const Container = styled.div`
   z-index: 1;
 
   img {
-      margin-right: 100px;
+    margin-right: 100px;
   }
 `;
 
@@ -79,6 +94,29 @@ const Menu = styled.div`
   }
 
   a {
-      width: 100px;
+    width: 100px;
+  }
+`;
+
+const RightMenu = styled.div`
+  align-items: center;
+  display: flex;
+  gap: 15px;
+
+  a {
+    border-radius: 50px;
+    color: #171a20;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 5px 10px;
+    position: relative;
+    text-decoration: none;
+    /* transition: all 0.2s; */
+    z-index: 0;
+  }
+
+  a:hover {
+    backdrop-filter: blur(16px);
+    background-color: hsla(0, 0%, 0%, 0.05);
   }
 `;
