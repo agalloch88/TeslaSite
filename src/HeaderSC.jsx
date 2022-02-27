@@ -36,12 +36,9 @@ function HeaderSC({ isMenuOpen, setIsMenuOpen }) {
         <Link to="/login" className={isMenuOpen && "header__link--hidden"}>
           Account
         </Link>
-        <div
-          className="header__menu"
-          onClick={() => setIsMenuOpen(!isMenuOpen)}
-        >
+        <ExpandingMenu onClick={() => setIsMenuOpen(!isMenuOpen)}>
           {isMenuOpen ? <CloseIcon /> : "Menu"}
-        </div>
+        </ExpandingMenu>
       </RightMenu>
     </Container>
   );
@@ -118,5 +115,25 @@ const RightMenu = styled.div`
   a:hover {
     backdrop-filter: blur(16px);
     background-color: hsla(0, 0%, 0%, 0.05);
+  }
+
+  
+`;
+
+const ExpandingMenu = styled.div`
+    color: #171a20;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+    text-decoration: none;
+    z-index: 2;
+
+    .MuiSvgIcon-root {
+    cursor: pointer;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    z-index: 2;
   }
 `;

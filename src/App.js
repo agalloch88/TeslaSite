@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./App.css";
-import Header from "./Header";
+// import Header from "./Header";
 import {
   BrowserRouter as Router,
   Route,
@@ -8,7 +8,7 @@ import {
   Redirect,
 } from "react-router-dom";
 import Menu from "./Menu";
-import HeaderBlock from "./HeaderBlock";
+// import HeaderBlock from "./HeaderBlock";
 import Login from "./Login";
 import { useDispatch, useSelector } from "react-redux";
 import { login, logout, selectUser } from "./features/userSlice";
