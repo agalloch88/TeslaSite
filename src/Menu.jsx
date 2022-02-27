@@ -19,7 +19,7 @@ function Menu({ isMenuOpen, setIsMenuOpen }) {
         <MenuItem title="Semi" />
         <MenuItem title="Charging" />
         <MenuItem title="Powerwall" />
-        <MenuItem title="Commercial Solar" />
+        <MenuItem title="Commercial Energy" />
         <MenuItem title="Utilities" />
         <MenuItem title="Find Us" />
         <MenuItem title="Support" />
