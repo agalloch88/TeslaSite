@@ -1,4 +1,5 @@
 import React from "react";
+import './Header.css';
 import { Link } from "react-router-dom";
 import CloseIcon from "@material-ui/icons/Close";
 import styled from "styled-components";
@@ -93,7 +94,11 @@ const Menu = styled.div`
   a {
     width: 100px;
   }
-`;
+
+  @media(max-width: 1200px) {
+      display: none;
+  }
+ `;
 
 const RightMenu = styled.div`
   align-items: center;
