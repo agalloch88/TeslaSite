@@ -70,6 +70,7 @@ const Menu = styled.div`
   display: flex;
   flex: 1;
   gap: 15px;
+  justify-content: center;
 
   p {
     border-radius: 50px;
@@ -114,13 +115,17 @@ const RightMenu = styled.div`
     position: relative;
     text-decoration: none;
     /* transition: all 0.2s; */
-    z-index: 0;
+    z-index: 2;
   }
 
   a:hover {
     backdrop-filter: blur(16px);
     background-color: hsla(0, 0%, 0%, 0.05);
   }
+
+  .header__link--hidden {
+    visibility: hidden;
+}
 `;
 
 const ExpandingMenu = styled.div`
@@ -130,13 +135,14 @@ const ExpandingMenu = styled.div`
   cursor: pointer;
   position: relative;
   text-decoration: none;
-  z-index: 2;
+  z-index: 3;
 
   .MuiSvgIcon-root {
+    color: #171a20;
     cursor: pointer;
     margin: 0;
     padding: 0;
     position: relative;
-    z-index: 2;
+    z-index: 3;
   }
 `;

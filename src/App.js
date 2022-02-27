@@ -48,7 +48,7 @@ function App() {
           <Route exact path="/">
             <HeaderSC isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />
             {/* <Header isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} /> */}
-            {isMenuOpen && <Menu />}
+            {isMenuOpen && <Menu isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen}/>}
             {/* <HeaderBlock /> */}
             <Home />
           </Route>

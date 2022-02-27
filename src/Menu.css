@@ -1,3 +1,13 @@
+.menu__wrapper::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.menu__wrapper {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
 .menu {
     background-color: white;
     bottom: 0;
@@ -16,6 +26,21 @@
     z-index: 1;
 }
 
+.menu__close {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    min-width: 280px;
+    overflow-y: scroll;
+    padding-bottom: 0px;
+    padding-left: 220px;
+    padding-top: 30px;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 3;
+}
+
 /* Hide scrollbar for Chrome, Safari and Opera */
 .menu::-webkit-scrollbar {
     display: none;
@@ -26,3 +51,14 @@
     -ms-overflow-style: none;  /* IE and Edge */
     scrollbar-width: none;  /* Firefox */
   }
+
+  /* Hide scrollbar for Chrome, Safari and Opera */
+.menu__close::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.menu__close {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
