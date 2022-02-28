@@ -5,7 +5,15 @@ import CloseIcon from "@material-ui/icons/Close";
 
 function Menu({ isMenuOpen, setIsMenuOpen }) {
   return (
-    <div className="menu__wrapper">
+    <div
+      className="menu__wrapper"
+      show={isMenuOpen}
+      style={{
+        transform: `${(props) =>
+          props.show ? "translateX(0)" : "translateX(100%)"}`,
+        transition: "transform 0.3s ease-in-out",
+      }}
+    >
       <div className="menu__close">
         <CloseIcon onClick={() => setIsMenuOpen(!isMenuOpen)} />
       </div>

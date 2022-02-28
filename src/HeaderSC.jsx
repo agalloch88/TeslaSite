@@ -37,7 +37,7 @@ function HeaderSC({ isMenuOpen, setIsMenuOpen }) {
         <Link to="/login" className={isMenuOpen && "header__link--hidden"}>
           Account
         </Link>
-        <ExpandingMenu onClick={() => setIsMenuOpen(!isMenuOpen)}>
+        <ExpandingMenu onClick={() => setIsMenuOpen(!isMenuOpen)} show={isMenuOpen}>
           {isMenuOpen ? <CloseIcon /> : "Menu"}
         </ExpandingMenu>
       </RightMenu>
