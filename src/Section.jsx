@@ -56,13 +56,13 @@ const Wrap = styled.div`
 `;
 
 const ItemText = styled.div`
-  font-size: 15px;
+  font-size: 16px;
   padding-top: 15vh;
   text-align: center;
 
   h1 {
       font-size: 40px;
-      font-weight: 400;
+      font-weight: 500;
   }
 
   p {

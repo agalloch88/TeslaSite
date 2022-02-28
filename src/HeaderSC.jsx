@@ -52,6 +52,7 @@ const Container = styled.div`
   display: flex;
   justify-content: space-between;
   left: 0;
+  margin-top: -15px;
   min-height: 60px;
   object-fit: contain;
   padding: 0 20px;
