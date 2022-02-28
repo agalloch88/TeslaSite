@@ -50,13 +50,24 @@ const Wrap = styled.div`
   flex-direction: column;
   height: 100vh;
   justify-content: space-between;
+  scroll-snap-align: start;
   width: 100vw;
+  z-index: 1;
 `;
 
 const ItemText = styled.div`
-  font-size: 20px;
+  font-size: 15px;
   padding-top: 15vh;
   text-align: center;
+
+  h1 {
+      font-size: 40px;
+      font-weight: 400;
+  }
+
+  p {
+      margin-top: 10px;
+  }
 
   span {
     border-bottom: 1px solid black;
@@ -71,8 +82,6 @@ const ItemText = styled.div`
     color: black;
   }
 `;
-
-// const DeliverySpan = styled.div``;
 
 const ButtonGroup = styled.div`
   cursor: pointer;

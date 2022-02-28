@@ -43,7 +43,14 @@
 }
 
 .menu__close > .MuiSvgIcon-root {
+  border-radius: 100%;
   cursor: pointer;
+  padding: 3px 3px;
+}
+
+.menu__close > .MuiSvgIcon-root:hover {
+  backdrop-filter: blur(16px);
+    background-color: hsla(0, 0%, 0%, 0.05);
 }
 
 /* Hide scrollbar for Chrome, Safari and Opera */

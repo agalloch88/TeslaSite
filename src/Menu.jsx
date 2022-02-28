@@ -7,10 +7,9 @@ function Menu({ isMenuOpen, setIsMenuOpen }) {
   return (
     <div
       className="menu__wrapper"
-      show={isMenuOpen}
       style={{
-        transform: `${(props) =>
-          props.show ? "translateX(0)" : "translateX(100%)"}`,
+        transform: `${(isMenuOpen) =>
+          isMenuOpen ? "translateX(0)" : "translateX(100%)"}`,
         transition: "transform 0.3s ease-in-out",
       }}
     >

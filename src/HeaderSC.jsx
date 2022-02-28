@@ -129,13 +129,20 @@ const RightMenu = styled.div`
 `;
 
 const ExpandingMenu = styled.div`
+    border-radius: 50px;
   color: #171a20;
   font-size: 15px;
   font-weight: 500;
   cursor: pointer;
+  padding: 5px 10px;
   position: relative;
   text-decoration: none;
   z-index: 3;
+
+  &:hover{
+    backdrop-filter: blur(16px);
+    background-color: hsla(0, 0%, 0%, 0.05);
+  }
 
   .MuiSvgIcon-root {
     color: #171a20;
