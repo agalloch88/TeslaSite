@@ -3,32 +3,41 @@ import "./Header.css";
 import { Link } from "react-router-dom";
 import CloseIcon from "@material-ui/icons/Close";
 import styled from "styled-components";
+import { selectCars } from "./features/carSlice";
+import { useSelector } from "react-redux";
 
 function HeaderSC({ isMenuOpen, setIsMenuOpen }) {
+    const cars = useSelector(selectCars);
+    console.log(cars);
   return (
     <Container>
       <a href="/">
         <img src="/images/Tesla-Logo.svg" alt="Tesla styled logo" />
       </a>
       <Menu>
-        <p>
-          <a href="#model-s">Model S</a>
-        </p>
-        <p>
-          <a href="#model-3">Model 3</a>
-        </p>
-        <p>
-          <a href="#model-x">Model X</a>
-        </p>
-        <p>
-          <a href="#model-y">Model Y</a>
-        </p>
-        <p>
-          <a href="#solar-roof">Solar Roof</a>
-        </p>
-        <p>
-          <a href="#solar-panel">Solar Panels</a>
-        </p>
+          {cars && cars.map((car, index) => {
+              return (
+                <p key={index}><a href="#">{car}</a></p>
+              ) 
+          })}
+        {/* // <p>
+        //   <a href="#model-s">Model S</a>
+        // </p>
+        // <p>
+        //   <a href="#model-3">Model 3</a>
+        // </p>
+        // <p>
+        //   <a href="#model-x">Model X</a>
+        // </p>
+        // <p>
+        //   <a href="#model-y">Model Y</a>
+        // </p>
+        // <p>
+        //   <a href="#solar-roof">Solar Roof</a>
+        // </p>
+        // <p>
+        //   <a href="#solar-panel">Solar Panels</a>
+        // </p> */}
       </Menu>
       <RightMenu>
         <Link to="/" className={isMenuOpen && "header__link--hidden"}>
@@ -78,7 +87,7 @@ const Menu = styled.div`
     color: #171a20;
     display: flex;
     font-size: 15px;
-    font-weight: 500;
+    font-weight: 600;
     justify-content: center;
     padding: 5px 10px;
     text-align: center;
@@ -111,7 +120,7 @@ const RightMenu = styled.div`
     border-radius: 50px;
     color: #171a20;
     font-size: 15px;
-    font-weight: 500;
+    font-weight: 600;
     padding: 5px 10px;
     position: relative;
     text-decoration: none;
@@ -133,7 +142,7 @@ const ExpandingMenu = styled.div`
     border-radius: 50px;
   color: #171a20;
   font-size: 15px;
-  font-weight: 500;
+  font-weight: 600;
   cursor: pointer;
   padding: 5px 10px;
   position: relative;
