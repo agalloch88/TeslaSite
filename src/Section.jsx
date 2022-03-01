@@ -73,7 +73,6 @@ const ItemText = styled.div`
     border-bottom: 1px solid black;
     color: #393c41;
     cursor: pointer;
-    padding-bottom: 4px;
     padding-top: 15px;
   }
 
