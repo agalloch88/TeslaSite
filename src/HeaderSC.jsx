@@ -17,7 +17,7 @@ function HeaderSC({ isMenuOpen, setIsMenuOpen }) {
       <Menu>
           {cars && cars.map((car, index) => {
               return (
-                <p key={index}><a href="#">{car}</a></p>
+                <p key={index}><a href="/">{car}</a></p>
               ) 
           })}
         {/* // <p>
